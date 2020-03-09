@@ -1,0 +1,90 @@
+/*Mixins and Essentials*/
+
+$primary-font: "Roboto", sans-serif;
+$hindi-font: "Noto Sans", sans-serif;
+
+@mixin transition($time) {
+  -webkit-transition: all$time ease;
+  -moz-transition: all$time ease;
+  -o-transition: all$time ease;
+  transition: all$time ease;
+}
+
+@mixin smoothtransition($time) {
+  -webkit-transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+  -moz-transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+  -o-transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+  transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/*Body*/
+
+body {
+  margin: 0px;
+  background: #ecf0f1;
+  font-family: $primary-font;
+}
+
+h1 {
+  font-weight: 600;
+  text-align: center;
+  width: 90%;
+  color: #82ccdd;
+  margin: 30px auto;
+}
+
+section {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .card {
+    width: calc(50% - 102px);
+    min-width: calc(320px - 102px);
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    p {
+      color: #2c3e50;
+      font-size: 1.1em;
+      margin: 20px 0px;
+    }
+
+    p.h {
+      font-family: $hindi-font;
+      font-weight: 400;
+    }
+  }
+}
+
+iframe {
+  margin: 30px auto;
+  height: 725px;
+  width: 90%;
+  justify-content: center;
+}

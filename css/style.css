@@ -1,0 +1,67 @@
+/*Mixins and Essentials*/
+::-webkit-scrollbar {
+  width: 12px;
+  height: 5px; }
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none; }
+
+::-webkit-scrollbar-corner {
+  background-color: transparent; }
+
+/*Body*/
+body {
+  margin: 0px;
+  background: #ecf0f1;
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-weight: 600;
+  text-align: center;
+  width: 90%;
+  color: #82ccdd;
+  margin: 30px auto; }
+
+section {
+  width: 90%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  section .card {
+    width: calc(50% - 102px);
+    min-width: calc(320px - 102px);
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+    section .card p {
+      color: #2c3e50;
+      font-size: 1.1em;
+      margin: 20px 0px; }
+    section .card p.h {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 400; }
+
+iframe {
+  margin: 30px auto;
+  height: 725px;
+  width: 90%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
