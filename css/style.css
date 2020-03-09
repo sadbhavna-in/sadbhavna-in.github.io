@@ -72,7 +72,8 @@ section {
     .content .card p {
       color: #2c3e50;
       font-size: 1.1em;
-      margin: 20px 0px; }
+      margin: 20px 0px;
+      text-align: center; }
     .content .card p.h {
       font-family: "Noto Sans", sans-serif;
       font-weight: 400; }
